@@ -1,0 +1,108 @@
+/* style2.css placeholder - Add your 300+ line CSS here */
+body {
+    background: #0f0c29;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-wrapper {
+    max-width: 1050px;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.15);
+}
+
+.portfolio-name {
+    font-size: 4rem;
+    color: #00fff7;
+    text-align: center;
+    animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+    from { opacity: 0.6; text-shadow: 0 0 10px #0ff; }
+    to { opacity: 1; text-shadow: 0 0 30px #0ff; }
+}
+
+.portfolio-interest {
+    text-align: center;
+    color: #ff00ff;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.portfolio-basic-info p {
+    font-size: 1rem;
+    margin: 6px 0;
+    color: #ccc;
+}
+
+h2 {
+    border-left: 5px solid #00fff7;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 8px;
+    transition: transform 0.4s;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    background: rgba(0, 255, 255, 0.2);
+}
+
+.portfolio-project-gallery img {
+    width: 32%;
+    margin: 1%;
+    border-radius: 10px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.portfolio-project-gallery img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.portfolio-testimonials blockquote {
+    background: rgba(255, 0, 255, 0.1);
+    border-left: 5px solid #ff00ff;
+    margin: 20px 0;
+    padding: 20px;
+    font-style: italic;
+}
+
+.certificates-gallery img {
+    width: 140px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.certificates-gallery img:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 10px #0ff);
+}
+
+.portfolio-footer a {
+    background: #ff00ff;
+    color: #fff;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.portfolio-footer a:hover {
+    background: #00fff7;
+    color: #000;
+}
